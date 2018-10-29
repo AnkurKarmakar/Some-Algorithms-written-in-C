@@ -42,7 +42,7 @@ void main()
 		{
 			printf("Edge %d: (%d , %d)	cost: %d \n",edge_count++, a, b, min);
 			mincost = mincost + min;
-			taken[b] = true;
+			taken[b] = taken[a] = true;
 		}
 		cost[a][b]=cost[b][a]=INT_MAX;
 	}
